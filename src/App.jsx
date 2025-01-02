@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import UseMemoExample from "./useMemoComponent";
 import "./App.css";
 
 function App() {
@@ -27,6 +26,8 @@ function App() {
         onChange={(e) => setUserInput(e.target.value)}
       />
       <h1> Output : {userInput || "--"}</h1>
+      //following component for useMemo hook
+      <UseMemoExample />
     </main>
   );
 }
